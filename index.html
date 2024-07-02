@@ -1,28 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="text/html; charset=UTF-8; X-Content-Type-Options=nosniff" http-equiv="Content-Type" />
+
+    <meta property="org:description"
+        content="Найкращий сервісний центр Білої Церкви🔥. Відремонтуємо ваш: телефон, планшет, ноутбук, ПК, принтер, картридж⚒.
+    Заправка та ремонт лазерних картриджів. Продаж аксесуарів. Леваневського-Центр. Телефонуй: (096) 621 24 25, (093) 265 27 63!📲">
+
+    <meta property="org:image" content="media/astoriaLogo.png">
 
     <link rel="apple-touch-icon" href="media/icons/logoIcon.png">
     <link rel="shortcut icon" href="media/icons/logoIcon.png" type="image/x-icon">
 
-    <link rel = "stylesheet" href = "css/slick.css" type = "text/css">
-    <link rel = "stylesheet" href = "css/indexStyle.css" type = "text/css">
-    <link rel = "stylesheet" href = "css/aos.css" type = "text/css">
-    <link rel = "stylesheet" href = "css/hamburgers.css" type = "text/css">
-    
-    <title>Сервісний центр Astoria</title>
+    <link rel="stylesheet" href="css/slick.css" type="text/css">
+    <link rel="stylesheet" href="css/indexStyle.css" type="text/css">
+    <link rel="stylesheet" href="css/aos.css" type="text/css">
+    <link rel="stylesheet" href="css/request.css" type="text/css">
+    <link rel="stylesheet" href="css/hamburgers.css" type="text/css">
 
-
-    <style>
-    </style>
+    <title>Astoria Service - ремонт комп'ютерної та ОРГ техніки</title>
+    <meta name="description"
+        content="Найкращий сервісний центр Білої Церкви🔥. Відремонтуємо ваш: телефон, планшет, ноутбук, ПК, принтер, картридж⚒.
+    Заправка та ремонт лазерних картриджів. Продаж аксесуарів. Леваневського-Центр. Телефонуй: (096) 621 24 25, (093) 265 27 63!📲">
+    <meta name="keywords"
+        content="Ремонт техніки в Білій Церкві. Ремонт техники в Белой Церкви. Сервисный центр. а Сервис. Астория сервис. Astoria Service. Запрвка картриджей. Запривка картриджів">
+    <meta name="robots" content="index,follow" />
+    <base href="https://astoriaservice.com.ua">
 </head>
+
 <body>
     <div class="preloader">
         <div class="preloaderLogo">
-            <img class="preloaderPhoto" src="media/astoriaLogo.png" width="100%" height="100%" alt = "Logo">
+            <img class="preloaderPhoto" src="media/astoriaLogo.png" width="100%" height="100%" alt="Logo">
         </div>
         <div class="loader-inner">
             <div class="loader-line-wrap">
@@ -43,72 +56,123 @@
         </div>
     </div>
 
-    <div class="header">
-        <img onclick="reload()" class="headerLogo" src="media/astoriaLogo.png" width="100%" height="100%" alt = "Logo">
+    <header>
+        <img onclick="reload()" class="headerLogo" src="media/astoriaLogo.png" width="100%" height="100%" alt="Logo">
+    </header>
+
+    <div class="wrapper" onclick="PopUpShow()">
+        <div class="pulse">
+            <div class="phone"><img src="media/icons/telephone-receiver.png" class="fa fa-phone"></div>
+            <div class="text">call back</div>
+        </div>
     </div>
 
     <div class="navigation">
-        <a onclick="javascript:location.href='pages/PC.html';">КОМП’ЮТЕРИ</a>
+        <a href="pages/PC.html">КОМП’ЮТЕРИ</a>
         <span>|</span>
-        <a onclick="javascript:location.href='pages/laptop.html';">НОУТБУКИ</a>
+        <a href="pages/laptop.html">НОУТБУКИ</a>
         <span>|</span>
-        <a onclick="javascript:location.href='pages/smartphones.html';">СМАРТФОНИ</a>
+        <a href="pages/smartphones.html">СМАРТФОНИ</a>
         <span>|</span>
-        <a onclick="javascript:location.href='pages/pads.html';">ПЛАНШЕТИ</a>
+        <a href="pages/pads.html">ПЛАНШЕТИ</a>
         <span>|</span>
-        <a onclick="javascript:location.href='pages/cartriges.html';">КАРТРИДЖІ</a>
+        <a href="pages/cartriges.html">КАРТРИДЖІ</a>
         <span>|</span>
-        <a onclick="javascript:location.href='pages/printers.html';">ПРИНТЕРИ</a>
+        <a href="pages/printers.html">ПРИНТЕРИ</a>
         <span>|</span>
-        <a id = 'footerScroll'>КОНТАКТИ</a>
+        <a id='footerScroll'>КОНТАКТИ</a>
     </div>
 
-    <div class="mobileNavigation" id = "side">
+    <div class="mobileNavigation" id="side">
         <div class="nav">
-            <img onclick="reload()" src="media/astoriaMobileLogo.png" width="100%" height="100%" class="mobileNavigationLogo" alt="logo">
-
-            
-            <button class="hamburger hamburger--collapse" type="button" onclick="sideSliderControlTWo()" id = "but">
+            <img onclick="reload()" src="media/astoriaMobileLogo.png" width="100%" height="100%"
+                class="mobileNavigationLogo" alt="logo">
+            <button class="hamburger hamburger--collapse" type="button" onclick="sideSliderControlTWo()" id="but">
                 <span class="hamburger-box">
-                  <span class="hamburger-inner"></span>
+                    <span class="hamburger-inner"></span>
                 </span>
-              </button>
+            </button>
         </div>
         <div class="list">
-            <a onclick="javascript:location.href='pages/PC.html';">Ремонт комп’ютерів</a>
+            <a href="pages/PC.html">Ремонт комп’ютерів</a>
             <hr>
-            <a onclick="javascript:location.href='pages/laptop.html';">Ремонт ноутбуків </a>
+            <a href="pages/laptop.html">Ремонт ноутбуків </a>
             <hr>
-            <a onclick="javascript:location.href='pages/smartphones.html';">Ремонт смартфонів</a>
+            <a href="pages/smartphones.html">Ремонт смартфонів</a>
             <hr>
-            <a onclick="javascript:location.href='pages/pads.html';">Ремонт планшетів</a>
+            <a href="pages/pads.html">Ремонт планшетів</a>
             <hr>
-            <a onclick="javascript:location.href='pages/cartriges.html';">Ремонт/Заправка картриджів</a>
+            <a href="pages/cartriges.html">Ремонт/Заправка картриджів</a>
             <hr>
-            <a onclick="javascript:location.href='pages/printers.html';">Ремонт принтерів</a>
+            <a href="pages/printers.html">Ремонт принтерів</a>
             <hr>
-            <a id = 'footerScrollmobile'>Контакти</a>
+            <a id='footerScrollmobile'>Контакти</a>
         </div>
     </div>
+    <div id="phoneReqest">
+        <div class="user">
+            <div class="preloaderLogo">
+                <img class="preloaderPhoto" src="media/astoriaLogo.png" width="100%" height="100%" alt="Logo">
+            </div>
+            <img onclick="PopUpHide()" src="media/icons/clouse.png" width="20px" height="20px"
+                style="position:absolute; right: 5px; top: 8px; cursor: pointer;">
+            <form method="post" action="telegram.php" class="form">
+                <div class="form__group">
+                    <input type="text" placeholder="Ваше ім'я" class="form__input" required="required"
+                        name="user_name" />
+                </div>
 
+                <div class="form__group">
+                    <input type="tel" maxlength="50" required="required" id="online_phone" value="+38(0__)___-__-__"
+                        pattern="\+38\s?[\(]\0\[0-9]{2}[\)]{0-9}\s?\d{3}[-]{0-9}\d{2}[-]{0-9}\d{2}"
+                        placeholder="+38(0__)___-__-__" class="form__input" name="user_phone" />
+                </div>
+                <div class="form__group">
+                    <select type="text" name="gadjet" required="required" class="form__select">
+                        <option value="Необрано" selected>Оберіть ваш пристрій</option>
+                        <option value="Телефон">Телефон</option>
+                        <option value="Планшет">Планшет</option>
+                        <option value="Комп'ютер">Комп'ютер</option>
+                        <option value="Ноутбук">Ноутбук</option>
+                        <option value="Принтер">Принтер</option>
+                        <option value="Картридж">Картридж</option>
+                    </select>
+                </div>
+
+                <div class="form__group">
+                    <textarea class="form_texarea" id="msg" name="user_message"
+                        placeholder="Зазначте назву пристрою, його модель та опишіть проблему."></textarea>
+                </div>
+
+                <div style="display: none;">
+                    <label for="spot">Не заповнюйте це поле:</label>
+                    <input type="text" id="spot" name="spot">
+                </div>
+
+                <div class="g-recaptcha" data-sitekey="6Le0xYcpAAAAAJCFnlonSXKK_CaIpRTqc7lonQLm"></div>
+
+                <button class="btn" type="submit" name="submit" value="sent">Відправити заявку</button>
+            </form>
+        </div>
+    </div>
 
     <div class="slick-slider">
         <picture>
-            <source	media="(max-width: 600px)" srcset="media/SliderItem1425.jpg" style="width: 100%; height: 380px">
-            <source	media="(max-width: 768px)" srcset="media/SliderItem1768.jpg" style="width: 100%; height: 450px">
-            <source	media="(max-width: 1024px)" srcset="media/SliderItem1024.jpg" style="width: 100%; height: 519px">
+            <source media="(max-width: 600px)" srcset="media/SliderItem1425.jpg" style="width: 100%; height: 380px">
+            <source media="(max-width: 768px)" srcset="media/SliderItem1768.jpg" style="width: 100%; height: 450px">
+            <source media="(max-width: 1024px)" srcset="media/SliderItem1024.jpg" style="width: 100%; height: 519px">
             <img src="media/SliderItem1.png" style="width: 100%; height: 519px">
         </picture>
         <picture>
-            <source	media="(max-width: 600px)" srcset="media/test1.jpg" style="width: 100%; height: 380px">
-            <source	media="(max-width: 768px)" srcset="media/SliderItem2768.jpg" style="width: 100%; height: 450px">
-            <source	media="(max-width: 1024px)" srcset="media/SliderItem21024.jpg" style="width: 100%; height: 519px">
+            <source media="(max-width: 600px)" srcset="media/SliderItem2425.jpg" style="width: 100%; height: 380px">
+            <source media="(max-width: 768px)" srcset="media/SliderItem2768.jpg" style="width: 100%; height: 450px">
+            <source media="(max-width: 1024px)" srcset="media/SliderItem21024.jpg" style="width: 100%; height: 519px">
             <img src="media/SliderItem2.jpg" style="width: 100%; height: 519px">
         </picture>
         <picture>
-            <source	media="(max-width: 600px)" srcset="media/test2.jpg" style="width: 100%; height: 380px">
-            <source	media="(max-width: 768px)" srcset="media/SliderItem3768.jpg" style="width: 100%; height: 450px">
-            <source	media="(max-width: 1024px)" srcset="media/SliderItem310024.jpg" style="width: 100%; height: 519px">
+            <source media="(max-width: 600px)" srcset="media/SliderItem3425.jpg" style="width: 100%; height: 380px">
+            <source media="(max-width: 768px)" srcset="media/SliderItem3768.jpg" style="width: 100%; height: 450px">
+            <source media="(max-width: 1024px)" srcset="media/SliderItem310024.jpg" style="width: 100%; height: 519px">
             <img src="media/SliderItem3.jpg" style="width: 100%; height: 519px">
         </picture>
     </div>
@@ -117,100 +181,116 @@
         <div class="mainSliderTextBox">
             <h1>Ремонт техніки<br>в Білій Церкві</h1>
             <div class="mainSliderAchives">
-                <img class = "mainSliderIcon" src="media/icons/speed.png" alt="speed" >
+                <img class="mainSliderIcon" src="media/icons/speed.png" alt="speed">
                 <p>Оперативно</p>
-                <img class = "mainSliderIcon" src="media/icons/cheep.png" alt="speed" >
+                <img class="mainSliderIcon" src="media/icons/cheep.png" alt="speed">
                 <p>Доступно</p>
-                <img class = "mainSliderIcon" src="media/icons/safe.png" alt="speed" >
+                <img class="mainSliderIcon" src="media/icons/safe.png" alt="speed">
                 <p>Надійно</p>
             </div>
         </div>
         <div class="mainSliderDecoration"></div>
     </div>
 
-    <div class="serviceBox" id = "firstServiceBox">
+    <div class="serviceBox" id="firstServiceBox">
         <h2 data-aos="fade" data-aos-duration="1000">Ремонт та модернізація ПК</h2>
-        <p data-aos="fade" data-aos-duration="1300">Надоїло чекати поки завантажеться сторінка в Інтернеті?<br>
-        Не працює комп’ютер?<br> Звертайся до нас</p>
-        <a data-aos="fade" data-aos-duration="1400" onclick="javascript:location.href='pages/PC.html';">Детальніше ></a>
+        <p data-aos="fade" data-aos-duration="1300">Не вмикається? З’явився синій екран?<br>
+            Шумить так, ніби зараз взлетить?<br>Ми знаємо, як це виправити</p>
+        <a data-aos="fade" data-aos-duration="1400" href="pages/PC.html">Детальніше ></a>
         <div data-aos="fade-up" class="pcPhoto">
-            <img src="media/PC.png" width="100%" height="100%" alt = "pc" >
+            <img src="media/PC.png" width="100%" height="100%" alt="pc">
         </div>
     </div>
 
     <div class="serviceBox">
         <h2 data-aos="fade" data-aos-duration="1000">Ремонт та чистка ноутбуків</h2>
         <p data-aos="fade" data-aos-duration="1300">Шумить як ракета, а гріється як пічка?<br>
-            Поламався у найнепідходящий час? <br> Легко та швидко виправимо.</p>
-        <a data-aos="fade" data-aos-duration="1400" onclick="javascript:location.href='pages/laptop.html';">Детальніше ></a>
+            Зламався у неслушний момент? <br> Легко та швидко виправимо.</p>
+        <a data-aos="fade" data-aos-duration="1400" href="pages/laptop.html">Детальніше ></a>
         <div data-aos="zoom-in" class="LaptopPhoto">
-            <img src="media/laptop.png" width="100%" height="100%" alt = "pc">
+
+            <picture>
+                <source media="(max-width: 600px)" srcset="media/laptopTwo.png">
+                <img src="media/laptop.png" width="100%" height="100%" alt="pc">
+            </picture>
         </div>
     </div>
-    
+
     <div class="serviceBox">
         <h2 data-aos="fade" data-aos-duration="1000">Ремонт смартфонів</h2>
-        <p data-aos="fade" data-aos-duration="1300">Наші майстри ремонтують 99% техніки.<br>
-            Проводимо роботи різної складності.</p>
-        <a data-aos="fade" data-aos-duration="1400"  onclick="javascript:location.href='pages/smartphones.html';">Детальніше ></a>
+        <p data-aos="fade" data-aos-duration="1300">Перестав заряджатись? Розбився екран? Не вмикається?<br>
+            Зробимо все, щоб запрацював як новий </p>
+        <a data-aos="fade" data-aos-duration="1400" href="pages/smartphones.html">Детальніше ></a>
         <div class="phones">
-            <img data-aos="fade-up" data-aos-duration="1000" src="media/PhoneOne.png" width="100%" height="100%" alt = "pc" class="PhonePhotoOne">
-            <img data-aos="fade-up" data-aos-duration="1500" src="media/PhoneTwo.png" width="100%" height="100%" alt = "pc" class="PhonePhotoTwo">
-            <img data-aos="fade-up" src="media/PhoneThree.png" width="100%" height="100%" alt = "pc" class="PhonePhotoThree">
+            <img data-aos="fade-up" data-aos-duration="1000" src="media/PhoneOne.png" width="100%" height="100%"
+                alt="pc" class="PhonePhotoOne">
+            <img data-aos="fade-up" data-aos-duration="1500" src="media/PhoneTwo.png" width="100%" height="100%"
+                alt="pc" class="PhonePhotoTwo">
+            <img data-aos="fade-up" src="media/PhoneThree.png" width="100%" height="100%" alt="pc"
+                class="PhonePhotoThree">
         </div>
     </div>
 
     <div class="serviceBox">
         <h2 data-aos="fade" data-aos-duration="1000">Ремонт планшетів</h2>
-        <p data-aos="fade" data-aos-duration="1300">Виконуємо ремонти від яких відмовляються<br>
-            інші сервіси.</p>
-        <a data-aos="fade" data-aos-duration="1400"  onclick="javascript:location.href='pages/pads.html';">Детальніше ></a>
+        <p data-aos="fade" data-aos-duration="1300">Швидко розряджається? Давно не користувались і не вмикається?<br>
+            Виправимо всі недоліки</p>
+        <a data-aos="fade" data-aos-duration="1400" href="pages/pads.html">Детальніше ></a>
         <div class="pads">
-            <img data-aos="fade-up" data-aos-duration="1000" src="media/padOne.png" width="100%" height="100%" alt = "pc" class="PadPhotoOne">
-            <img  data-aos="fade-up" data-aos-duration="1500" src="media/PadTwo.png" width="100%" height="100%" alt = "pc" class="PadPhotoTwo">
-            <img data-aos="fade-up" src="media/PadThree.png" width="100%" height="100%" alt = "pc" class="PadPhotoThree">
+            <img data-aos="fade-up" data-aos-duration="1000" src="media/padOne.png" width="100%" height="100%" alt="pc"
+                class="PadPhotoOne">
+            <img data-aos="fade-up" data-aos-duration="1500" src="media/PadTwo.png" width="100%" height="100%" alt="pc"
+                class="PadPhotoTwo">
+            <img data-aos="fade-up" src="media/PadThree.png" width="100%" height="100%" alt="pc" class="PadPhotoThree">
         </div>
     </div>
 
     <div class="serviceBox">
         <h2 data-aos="fade" data-aos-duration="1000">Заправка та ремонт картриджів</h2>
-        <p data-aos="fade" data-aos-duration="1300">Обслуговуємо лазерні картриджі<br>
-            Зправка, ремонт, повне відновлення</p>
-        <a data-aos="fade" data-aos-duration="1400"  onclick="javascript:location.href='pages/pads.html';">Детальніше ></a>
-            <img data-aos="fade-up" data-aos-duration="1000" src="media/cartrige.png" width="100%" height="100%" alt = "pc" class="cartridgePhoto">
+        <p data-aos="fade" data-aos-duration="1300">Заправляємо так, що картридж друкує чітко і без зайвого шуму<br>
+            Доставка по місту</p>
+        <a data-aos="fade" data-aos-duration="1400" href="pages/cartriges.html">Детальніше ></a>
+        <img data-aos="fade-up" data-aos-duration="1000" src="media/cartrige.png" width="100%" height="100%" alt="pc"
+            class="cartridgePhoto">
     </div>
 
 
     <div class="serviceBox">
         <h2 data-aos="fade" data-aos-duration="1000">Ремонт принтерів</h2>
-        <p data-aos="fade" data-aos-duration="1300">Ремонтуємо майже всі існуючі принтери<br>Виконуємо широкий спектор послуг</p>
-        <a data-aos="fade" data-aos-duration="1400"  onclick="javascript:location.href='pages/printers.html';">Детальніше ></a>
+        <p data-aos="fade" data-aos-duration="1300">Постійно світиться помилка? Друкує не тим кольором?<br>Не забирає
+            папір чи забирає багато?
+            <br>Відремонтуємо і буде працювати, як новий
+        </p>
+        <a data-aos="fade" data-aos-duration="1400" href="pages/printers.html">Детальніше ></a>
         <div data-aos="zoom-in" class="PrinterPhoto">
-            <img src="media/printer.png" width="100%" height="100%" alt = "pc">
+            <img src="media/printer2.png" width="100%" height="100%" alt="pc">
         </div>
     </div>
 
-    <div class="footer">
+    <footer>
         <div class="footerLogoBox">
-            <img data-aos="zoom-in" src="media/footerLogo.png" width="100%" height="100%" class="footerLogo" alt="logo">
+            <img data-aos="zoom-in" src="../media/footerLogo.svg" width="100%" height="100%" class="footerLogo"
+                alt="logo">
             <hr>
         </div>
         <div class="footerInformation">
             <div class="location">
-                <h3 data-aos="fade-down" data-aos-duration="1200" style=" grid-area: label; align-self: flex-start;">Наші відділення</h3>
-                <img src="media/icons/location.png" class="footerIcon" style=" grid-area: IconOne;">
+                <h3 data-aos="fade-down" data-aos-duration="1200" style=" grid-area: label; align-self: flex-start;">
+                    Перше відділення</h3>
+                <img src="media/icons/location.svg" class="footerIcon" style=" grid-area: IconOne;">
                 <div data-aos="fade-down" data-aos-duration="1350" class="adress" style=" grid-area: AdressOne;">
-                    <p>вул. С Наливайка, 24</p>
-                    <a>(поряд Нова пошта № 12)</a>
+                    <a class="phoneNumber" href="tel:+380966212425">+38 (096) 621 24 25</a>
+                    <a onclick="PopUpShow()">Замовити зворотній дзвінок</a>
                 </div>
-                <img src="media/icons/location.png" class="footerIcon" style=" grid-area: IconTwo;">
+                <img src="media/icons/phone.svg" class="footerIcon" style=" grid-area: IconTwo;">
                 <div data-aos="fade-down" data-aos-duration="1350" class="adress" style=" grid-area: AdressTwo; ">
-                    <p>вул. Леваневського, 49</p>
-                    <a>(поряд Нова пошта № 3)</a>
+                    <p>вул. С Наливайка, 24</p>
+                    <!--<a style = "color: red; text-decoration: none; font-size: 1em">Тимчасово зачинене</a>-->
+                    <a>(поряд Нова пошта № 12)</a>
                 </div>
             </div>
             <div class="schedule">
-                <h3 data-aos="fade-down" data-aos-duration="1200" >Графік роботи</h3>
+                <h3 data-aos="fade-down" data-aos-duration="1200">Графік роботи</h3>
                 <div data-aos="fade-down" data-aos-duration="1300" class="workHours">
                     <p>Будні</p>
                     <p style="justify-self:end">10:00 - 18:00</p>
@@ -218,22 +298,26 @@
                     <p style="justify-self:end">Вихідні</p>
                 </div>
                 <div class="socialNets">
-                    <a data-aos="zoom-in" data-aos-duration="1350" href="https://www.instagram.com/astoriaservice/"><img src="media/icons/instagramm.png" class="socialNetIcon"></a>
-                    <a data-aos="zoom-in" data-aos-duration="1350" href="https://www.facebook.com/astoriaService/"><img src="media/icons/facebook.png" class="socialNetIcon"></a>
-                    <a data-aos="zoom-in" data-aos-duration="1350" href="https://telegram.me/astoriaService"><img src="media/icons/telegram.png" class="socialNetIcon"></a>
+                    <a data-aos="zoom-in" data-aos-duration="1350" href="https://www.instagram.com/astoriaservice/"><img
+                            src="media/icons/instagramm.svg" class="socialNetIcon"></a>
+                    <a data-aos="zoom-in" data-aos-duration="1350" href="https://www.facebook.com/astoriaService/"><img
+                            src="media/icons/facebook.svg" class="socialNetIcon"></a>
+                    <a data-aos="zoom-in" data-aos-duration="1350" href="https://telegram.me/astoriaService"><img
+                            src="media/icons/telegram.svg" class="socialNetIcon"></a>
                 </div>
             </div>
             <div class="contacts">
-                <h3 data-aos="fade-down" data-aos-duration="1200"  style=" grid-area: label; align-self: flex-start;">Контакти</h3>
-                <img src="media/icons/phone.png" class="footerIcon" style=" grid-area: IconOne;">
+                <h3 data-aos="fade-down" data-aos-duration="1200" style=" grid-area: label; align-self: flex-start;">
+                    Друге відділення</h3>
+                <img src="media/icons/location.svg" class="footerIcon" style=" grid-area: IconOne;">
                 <div data-aos="fade-down" data-aos-duration="1350" class="contact" style=" grid-area: ContactOne;">
-                    <a class="phoneNumber" href="tel:+380966212425">+38 (096) 621 24 25</a>
-                    <a>Замовити зворотній дзвінок</a>
+                    <p>вул. Леваневського, 49</p>
+                    <a>(поряд Нова пошта № 3)</a>
                 </div>
-                <img src="media/icons/phone.png" class="footerIcon" style=" grid-area: IconTwo;">
+                <img src="media/icons/phone.svg" class="footerIcon" style=" grid-area: IconTwo;">
                 <div data-aos="fade-down" data-aos-duration="1350" class="contact" style=" grid-area: ContactTwo;">
                     <a class="phoneNumber" href="tel:+380932652763">+38 (093) 265 27 63</a>
-                    <a>Замовити зворотній дзвінок</a>
+                    <a onclick="PopUpShow()">Замовити зворотній дзвінок</a>
                 </div>
             </div>
         </div>
@@ -241,17 +325,19 @@
 
         </div>
         <div class="siteInform">
-            <p>© astoriaservice.com.ua 2022</p>
+            <p>© astoriaservice.com.ua 2022-2023</p>
             <p>Designed and created by <span><a href="https://www.instagram.com/helldemid/">helldemid</a></span></p>
         </div>
-    </div>
+    </footer>
+
+
     <script>
         window.onload = function () {
-          document.body.classList.add('loaded_hiding');
-          window.setTimeout(function () {
-            document.body.classList.add('loaded');
-            document.body.classList.remove('loaded_hiding');
-          }, 500);
+            document.body.classList.add('loaded_hiding');
+            window.setTimeout(function () {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+            }, 500);
         }
     </script>
 
@@ -259,14 +345,26 @@
     <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript" src="js/indexScript.js"></script>
-    <script src = "js/anime.min.js"></script>
-    <script src = "js/anime.js"></script>
-    <script src = "js/anime.es.js"></script>
-    <script src = "js/interective.js"></script>
-    <script src = "js/aos.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCV188XkQkBh8W288WaQb8Jhu6YOUlvkuQ&callback=initMap" async defer></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/anime.js"></script>
+    <script src="js/anime.es.js"></script>
+    <script src="js/interective.js"></script>
+    <script src="js/consul.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCV188XkQkBh8W288WaQb8Jhu6YOUlvkuQ&callback=initMap"
+        async defer></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script>
         AOS.init();
     </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GYEEDT0SMR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-GYEEDT0SMR');
+    </script>
 </body>
+
 </html>
