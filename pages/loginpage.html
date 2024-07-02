@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "../css/indexStyle.css" type = "text/css">
+    <link rel = "stylesheet" href = "../css/PC.css" type = "text/css">
+    <link rel = "stylesheet" href = "../css/login.css" type = "text/css">
+
+    <title>Login</title>
+    <style>
+    </style>
+</head>
+<body>
+    <div class="wprapForm">
+        <div class="Logo">
+            <img class="headerLogo" src="../media/astoriaLoginLogo.png" width="100%" height="100%" alt = "Logo">
+        </div>
+        <form action="db.php" method="post">
+            
+            <label>
+              <input type="text" id="login" name = "login" placeholder="Введіть логін"/>
+            </label>
+            <label>
+              <input type="password" id = "pass" name = "pass"  placeholder="Введіть пароль"/>
+            </label>
+            <button class="red" type="submit" name="submit" value="sent">Увійти</button>
+            
+            <div class="footButt">
+              <button class="unit" type="button"><img src="../media/icons/back.png" width="100%" height="100%"></button>
+              <button class="unit" type="button"><img src="../media/icons/recover.png" width="100%" height="100%"></button>
+            </div>
+            
+          </form>
+    </div>
+    
+    
+</body>
+</html>

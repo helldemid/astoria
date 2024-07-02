@@ -1,0 +1,63 @@
+<?php 
+    session_start(); 
+    if(!$_SESSION['user']) {
+        header("Location: loginpage.php");
+    }
+    
+    require_once 'funcs.php';
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PersonalCabinate</title>
+    
+    <link rel="apple-touch-icon" href="../media/icons/logoIcon.png">
+    <link rel="shortcut icon" href="../media/icons/logoIcon.png" type="image/x-icon">
+    
+    <link rel = "stylesheet" href = "../css/indexStyle.css" type = "text/css">
+    <link rel = "stylesheet" href = "../css/request.css" type = "text/css">
+    <link rel = "stylesheet" href = "../css/res.css" type = "text/css">
+    
+    <link rel = "stylesheet" href = "../css/indexCabinet.css" type = "text/css">
+
+</head>
+<body>
+    
+    
+    
+    <?php
+        print_short_info();
+    ?>
+          
+
+    <div class="functions">
+        <a href = "personalInfo.php"><button class = "buttonWhite"><img src="../media/icons/group.png" width="32px" height="32px"><p>Клієнти</p></button></a>
+        <a href = "contracts.php"><button class = "buttonWhite"><img src="../media/icons/contract.png" width="32px" height="32px"><p>Контракти</p></button></a>
+        <a href = "orders.php"><button class = "buttonWhite"><img src="../media/icons/warehouse.png" width="32px" height="32px"><p>Замовлення</p></button></a>
+        <a href = "invoices.php"><button class = "buttonWhite"><img src="../media/icons/wallet.png" width="32px" height="32px"><p>Накладні</p></button></a>
+        <a href = "items.php"><button class = "buttonWhite"><img src="../media/icons/item.png" width="32px" height="32px"><p>Товари</p></button></a>
+        <a href = "logout.php"><button class = "buttonWhite"><img src="../media/icons/exit.png" width="32px" height="32px"><p>Вийти</p></button></a>
+    </div>
+    
+
+    
+    
+    
+    
+    
+    <script type="text/javascript" src="../js/jquery-3.6.0.min.js"></script>
+    <script src = "../js/consul.js"></script>
+    <script>
+        $('#close').click(closeMess);
+        
+        function closeMess() {
+            $('.outPut').css('display', 'none');
+        }
+    </script>
+    
+</body>
+</html>

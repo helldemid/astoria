@@ -1,0 +1,212 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contracts</title>
+
+    <style>
+
+    body, html {
+        background-color: #ebecf0;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: -0.2px;
+        font-size: 16px;
+    }
+        .personalHeader {
+            padding-left: 50px;
+            padding-top: 50px;
+        }
+        .shortInfo {
+            margin-top: 30px;
+        }
+        .shortInfo > p {
+            margin: 0 10px !important;
+            font-size: 18px;
+        }
+        .functions {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1300px;
+            justify-content: center;
+            margin-left: 4.86%;
+        }
+
+        .contractList {
+            display: flex;
+            flex-direction: column;
+            padding: 0 70px;
+        }
+
+        
+
+        .elemHead {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            cursor: pointer;
+            align-items: center;
+            border: 1px solid #b2b1b1;
+            padding: 0 10px;
+            height: 42px;
+
+        }
+        .elemBottom {
+            border: 1px solid #b2b1b1;
+            border-top: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 0 10px;
+        }
+
+        .listElem {
+            height: 44px;
+            overflow: hidden;
+            transition: 0.6s;
+        }
+
+        .priceLabel {
+            margin: 10px 0;
+        }
+
+        .priceLabel h2 {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 32px;
+            margin: 0;
+            text-align: center;
+        }
+
+        table {
+            display: flex;
+            border-spacing: 5px 10px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+            justify-content: center;
+        }
+
+        th {
+            padding: 10px 20px;
+            background: #000000;
+            color: #ffffff;
+            border-right: 2px solid; 
+            
+
+        }
+
+
+        td {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 18px;
+
+            vertical-align: middle;
+            padding: 10px;
+            text-align: center;
+            border: 2px solid #56433D;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    
+    <div class="personalHeader">
+        <img src="../../media/pHeaderLogo.png" width="300px">
+        <div class="shortInfo">
+            <p>Компанія: </p>
+            <p>Користувач: </p>
+            <p>Тип користувача: </p>
+            <p>В роботі: 3 замовлення</p>
+            
+        </div>
+    </div>
+
+    <h1 style="text-align: center;">Мої Замовлення</h1>
+    <hr>
+
+    <div class="contractList">
+        <div class="listElem" id = "fad1">
+            <div class="elemHead">
+                <p>№1124214</p>
+                <p>27.12.2022</p>
+                <span>На підтверджені</span>
+                <img id="arrow1" onclick="sideSliderControlTWo(1)" src="../../media/icons/more.png" width="32px" height="32px">
+            </div>
+            <div class="elemBottom" id = "bot1">
+                <div class="urInfo">
+                    <p>Виконавець: <em>ФОП Шевченко А.А.</em></p>
+                    <p>Замовник: <em>Вітаммед+</em></p>
+                </div>
+                <div class="info">
+                    <p>Товарна накладна №1 створенна на основі договора №1112</p>
+                    <p>Позиції додано згідно замовлення №1245</p>
+
+                    <br>
+                    <br>
+                    <div class="priceLabel">
+                        <h2>Позиції замовлення</h2>
+                    </div>
+                    <table>
+                        <tr>
+                        <th>№</th>
+                        <th>Найменування товару</th>
+                        <th>кількість</th>
+                        <th>Ціна з одиницю, грн.</th>
+                        <th>Всього, грн.</th>
+                        </tr>
+                        <tr>
+                        <td>1</td>
+                        <td>Скло</td>
+                        <td>200</td>
+                        <td>256</td>
+                        <td>1241412</td>
+                        </tr>
+                    </table>
+                    <div class="totalPrice">
+                        <p style="text-align: right;">Загальна сума, без урахування ПДВ 20%: 1241412 грн.</p>
+                    </div>
+                </div>
+        </div>
+
+
+    </div>
+
+
+    <script type="text/javascript" src="../../js/jquery-3.6.0.min.js"></script>
+
+    <script>
+    function sideSliderControlTWo($id) {
+        
+        $block = "#fad" + $id;
+        $arrow = "#arrow" + $id;
+        $bot = "#bot" + $id;
+       
+        if(parseInt($($block).css('height')) == 44) {
+            
+
+            $temp = parseInt($($bot).css('height')) + 45 + "px";
+            console.log($temp);
+            $($block).css('height', $temp);
+            $($arrow).css('rotate', '180deg');
+        } else {
+            $($block).css('height', '44px');
+            $($arrow).css('rotate', '0deg');
+            
+        }
+    }
+    </script>
+        
+ 
+    
+</body>
+</html>

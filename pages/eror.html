@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <link rel="apple-touch-icon" href="../media/icons/logoIcon.png">
+        <link rel="shortcut icon" href="../media/icons/logoIcon.png" type="image/x-icon">
+    
+        <link rel = "stylesheet" href = "../css/indexStyle.css" type = "text/css">
+        <link rel = "stylesheet" href = "../css/PC.css" type = "text/css">
+        <link href="../css/aos.css" rel="stylesheet">
+        <title>Помилка надсилання заявки</title>
+    </head>
+    <style>
+        body {
+            background: #262d3e;
+        }
+
+        .message {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            font-size: 63px;
+            font-family: Inter;
+        }
+        p {
+            text-align: center;
+            color: white;
+            font-size: 28px;
+            margin-top: 0;
+            font-family: Inter-light;
+        }
+        .socialNets {
+            width: 200px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .success {
+            width: 140px;
+            height: auto;
+        }
+        button {
+            font-family: Inter-light;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 24px; 
+            /* line-height: 39px; */
+            color: white;
+            border: 0;
+            padding: 7px;
+            margin-bottom: 18px;
+            /* height: 60px; */
+            /* width: 500px; */
+            background: var(--mainColor--);
+            cursor: pointer !important;
+            }
+
+        @media only screen and (max-width: 520px) {
+            .success {
+                width: 100px;
+            }
+            p {
+                font-size: 14px;
+            }
+            h1 {
+                font-size: 40px;
+            }
+            button {
+                font-size: 12px;
+            }
+        }
+
+        @media only screen and (max-width: 425px) {
+            .success {
+                width: 80px;
+            }
+            p {
+                font-size: 10px;
+            }
+            h1 {
+                font-size: 30px;
+            }
+            .footerIcon, .socialNetIcon {
+                width: 20px;
+                height: 20px;
+            }
+            button {
+                font-size: 9px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="preloader">
+        <div class="preloaderLogo">
+            <img class="preloaderPhoto" src="../media/astoriaLogo.png" width="100%" height="100%" alt = "Logo">
+        </div>
+        <div class="loader-inner">
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="message">
+        <img data-aos="zoom-in" data-aos-duration="1350" src="../media/icons/error.png" class = "success">
+        <h1 data-aos="fade" data-aos-duration="2500">Упс..<br>виникли технічні шоколадки</h1>
+        <p data-aos="fade" data-aos-duration="2500">ваша заявка не була відпралена<br>спробуйте ще раз</p>
+        <button onclick="history.back();">Повернутися назад</button>
+        <div class="socialNets">
+            <a  href="https://www.instagram.com/astoriaservice/"><img src="../media/icons/SuccessInst.png" class="socialNetIcon"></a>
+            <a  href="https://www.facebook.com/astoriaService/"><img src="../media/icons/SuccessFace.png" class="socialNetIcon"></a>
+            <a  href="https://telegram.me/astoriaService"><img src="../media/icons/SuccessTel.png" class="socialNetIcon"></a>
+        </div>
+    </div>
+
+
+
+    <script>
+        window.onload = function () {
+          document.body.classList.add('loaded_hiding');
+          window.setTimeout(function () {
+            document.body.classList.add('loaded');
+            document.body.classList.remove('loaded_hiding');
+          }, 500);
+        }
+    </script>
+    <script src = "../js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
